@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome HTML</title>
+	<style type="text/css">
+		.title { color: #666; }
+		p { color: red; }
+		.link { padding: 10px; }
+
+		.btn:hover {}
+
+		.main p { color: green; }
+		.main .link { padding: 15px; }
+		.main .btn { color: red; }
+		.main .btn:hover {}
+	</style>
+
+	<style type="text/scss">
+		@colorPrimary: #dede00;
+
+		.title { color: #666; }
+		p { color: @colorPrimary; }
+		.link { padding: 10px; }
+		
+		.main {
+			p { color: green; }
+
+			.btn { color: @colorPrimary; }
+		}
+	</style>
+</head>
+<body>
+	<h1 class="title">Hello World</h1>
+
+	<a href="#" class="link">view my projects</a>
+
+	<p>Greetings!!!</p>
+
+	<div class="main">
+		<p>This is another paragraph!!</p>
+
+		<a class="link" href="#">Ir a google</a>
+	</div>
+</body>
+</html>
